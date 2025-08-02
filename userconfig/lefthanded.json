@@ -1,0 +1,58 @@
+{
+
+    "name": "lefthanded",
+
+    "name_help": [
+        "# these two go hand in hand. if the grid is transparent, then the opacity will be ignored. If it's not transparent,",
+    "# then the opacity will be used to set the opacity of the grid."
+    ],
+    "grid_transparent": true,
+    "grid_opacity": 0.5,
+
+    "opacity_help": [
+        "# these are the colors of the grid.",
+        "# the grid color is the color of the grid lines.",
+        "# the grid text color is the color of the text in the grid.",
+        "# the grid background color is the color of the background of the grid."
+    ],
+    "grid_color": "brown",
+    "grid_text_color": "white",
+    "grid_background_color": "black",
+
+    "label_help": [
+        "# the grid label type is the type of label to use in the grid.",
+        "# the grid label type can be 'numeric' or 'alpha'."
+    ],
+    "grid_label_type": "leftkeyboard",
+
+    "hotkey_timeout_help": [
+        "# this is the timeout for the hotkey sequence.",
+        "# if the user presses a key, and then presses another key within this timeout, the sequence will be processed.",
+        "# if the user presses a key, and then presses another key after the timeout, the sequence will be reset."
+    ],
+    "hotkey_timeout": 1.0,
+
+    "grid_dimension_help": [
+        "# the grid dimension is the default number of cells in the grid.",
+        "# if a monitor is enabled, then the grid dimension will be overridden by the grid dimension in the monitor dictionary."
+    ],
+    "grid_dimension": [15, 15],
+
+    "monitors_help": [
+        "# List all the monitors here. Any monitor not listed will be automatically disabled.",
+        "# The key is the monitor index, and the value is a dictionary with the following keys:",
+        "# 'grid_dimension': (x, y) - The dimension of the grid on this monitor.",
+        "# 'enabled': True/False - Whether to enable the grid on this monitor."
+    ],
+    "monitors": {
+        "1": {
+            "grid_dimension": [6, 6],
+            "enabled": true
+        },
+        "2": {
+            "grid_dimension": [10, 10],
+            "enabled": false
+        }
+    }
+
+}

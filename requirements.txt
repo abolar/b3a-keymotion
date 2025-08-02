@@ -1,0 +1,16 @@
+# Core dependencies for the keypow_v3 project
+
+# Screen information and monitor detection
+screeninfo>=0.8.1
+
+# Keyboard input handling and automation
+keyboard>=0.13.5
+pyautogui>=0.9.54
+
+# Windows API access (for utilities.py)
+pywin32>=306
+
+# Standard library modules (included with Python, no installation needed):
+# - tkinter (GUI framework)
+# - sys, json, time, os, math, importlib, ctypes, functools
+# - platform (used in testpad.py) 
